@@ -1,11 +1,16 @@
 var app = new Vue({
   el: '#app',
   data: {
-    newItem: ''
+    newItem: '',
+    todos: []
   },
   methods: {
     addItem: function(e) {
-      alert();
+      // alert();
+      var todo = {
+        item: this.newItem
+      };
+      this.todos.push(todo)
     }
   }
 })
