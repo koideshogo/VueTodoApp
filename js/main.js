@@ -1,3 +1,8 @@
 var app = new Vue({
-  el: '#app'
-}) 
+  el: '#app',
+  methods: {
+    addItem: function(e) {
+      alert();
+    }
+  }
+})
