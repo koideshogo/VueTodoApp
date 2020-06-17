@@ -5,7 +5,7 @@ var app = new Vue({
     todos: []
   },
   methods: {
-    addItem: function(e) {
+    addItem: function(event) {
       // alert();
       if(this.newItem == '') return;
       var todo = {
