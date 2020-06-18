@@ -8,6 +8,10 @@
 </head>
 <body>
   <div id="app">
+    <h2>BitCoinPrice</h2>
+    <ul>
+      <li v-for="(rate, currency) in bpi">{{currency}} : {{rate.rate_float}}</li>
+    </ul>
     <h2>TODO List</h2>
     <form v-on:submit.prevent>
       <input type="text" v-model="newItem">
