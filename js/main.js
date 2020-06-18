@@ -9,8 +9,11 @@ var app = new Vue({
     axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
     .then(function(response){
       // console.log(response.data.bpi)
-      this.bpi = response.data.bpi.
+      this.bpi = response.data.bpi
     }.bind(this))
+    .catch(function(error){
+      console.log(error);
+    })
   },
   methods: {
     addItem: function(event) {
