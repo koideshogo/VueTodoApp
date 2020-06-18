@@ -15,6 +15,11 @@ var app = new Vue({
       console.log(error);
     })
   },
+  filters: {
+    currencyDecimal(value) {
+      return value.toFixed(2)
+    }
+  },
   methods: {
     addItem: function(event) {
       // alert();

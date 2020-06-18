@@ -10,7 +10,7 @@
   <div id="app">
     <h2>BitCoinPrice</h2>
     <ul>
-      <li v-for="(rate, currency) in bpi">{{currency}} : {{rate.rate_float}}</li>
+      <li v-for="(rate, currency) in bpi">{{currency}} : {{rate.rate_float | currencyDecimal}}</li>
     </ul>
     <h2>TODO List</h2>
     <form v-on:submit.prevent>
